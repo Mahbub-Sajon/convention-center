@@ -112,6 +112,17 @@
                   <div class="col-12 col-md-6 col-lg-6">
                     <div class="card-body">
                       <h5 class="card-title">Our Stories</h5>
+
+                      <div class="toast align-items-center show position-absolute top-20 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex brother">
+                          <div class="toast-body">
+                            <i class="fas fa-gift text-info"></i>
+                          Hello, world! This is a toast message.
+                         </div>
+                          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                      </div>
+
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <button class="btn btn-primary">See Our Album <i class="fas fa-arrow-right ms-1"></i>
                     </button>
@@ -338,6 +349,16 @@
       </div>
     </div>
     </footer>
+
+
+    <!-- Script for making the toast active  -->
+    <script>
+      window.onload = (e) => {
+          let myToast = document.querySelector('.toast');
+          let bsToast = new bootstrap.Toast(myToast);
+          bsToast.show();
+      }
+  </script>
 
 
 
